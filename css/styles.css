@@ -123,7 +123,7 @@ button {
 
 /*--------------------------- Header---------------------------- */
 .header {
-  border: 1px solid var(--border-header);
+  border-bottom: 1px solid var(--border-header);
 }
 
 .header-flex {
@@ -174,24 +174,6 @@ button {
   color: var(--accent-color);
 }
 
-.header-email-svg {
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.header-phone-svg {
-  display: inline-flex;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-.header-icon {
-  fill: var(--primary-text-color);
-}
-
 .header-email,
 .header-tel {
   font-weight: 500;
@@ -200,6 +182,12 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+}
+
+.header-icon {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-email:hover {
@@ -216,6 +204,14 @@ button {
 
 .header-tel:focus {
   color: var(--accent-color);
+}
+
+.header-icon:hover {
+  color: currentColor;
+}
+
+.header-icon:focus {
+  color: currentColor;
 }
 
 /* ---------------------------Hero------------------------------- */
@@ -364,6 +360,10 @@ button {
   margin-left: 0;
 }
 
+.team-div {
+  padding: 30px 32px 30px 32px;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.17;
@@ -387,7 +387,6 @@ button {
 
 .team-soc-list {
   display: inline-flex;
-  padding: 0 32px 32px 32px;
 }
 
 .team-soc-item {
@@ -460,6 +459,10 @@ button {
   border-color: var(--accent-color);
 }
 
+.clients-link:hover {
+  fill: var(--accent-color);
+}
+
 .clients-items:last-child {
   margin-right: 0;
 }
@@ -470,6 +473,7 @@ button {
   align-items: center;
   width: 170px;
   height: 92px;
+  fill: var(--soc-link-color);
 }
 
 .clients-icon {
@@ -491,8 +495,7 @@ button {
 }
 
 .footer-contacts {
-  padding-top: 60px;
-  padding-right: 70px;
+  margin-right: 70px;
 }
 
 .footer-soc-div {
@@ -606,6 +609,14 @@ button {
   width: 370px;
 }
 
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .portfolio-item:nth-child(3n + 3) {
   margin-right: 0;
 }
@@ -620,16 +631,11 @@ button {
   line-height: 1.62;
   text-decoration: none;
   padding: 6px 22px;
-  /* text-align: center; */
   min-width: 73px;
   height: 38px;
   background: var(--portfolio-btm-color);
   border: none;
   border-radius: 4px;
-}
-
-.portfolio-hover-shadow:hover {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-items {
