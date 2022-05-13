@@ -138,14 +138,13 @@ button {
 .header-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   margin-left: 93px;
 }
 
 .header-contact-list {
   display: flex;
   margin-left: auto;
-  align-items: baseline;
 }
 
 .header-item {
@@ -176,11 +175,13 @@ button {
 
 .header-email,
 .header-tel {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
   color: var(--primary-text-color);
 }
 
@@ -343,7 +344,6 @@ button {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .team-item {
@@ -428,10 +428,6 @@ button {
   fill: var(--hero-link-color);
 }
 
-.team-img {
-  margin-bottom: 30px;
-}
-
 /* -------------------Clients------------------ */
 .clients-title {
   font-size: 36px;
@@ -439,12 +435,10 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .clients-list {
   display: flex;
-  padding-bottom: 94px;
   justify-content: center;
 }
 
